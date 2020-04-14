@@ -1,12 +1,11 @@
 
-function convertTime(time, value){
-  if(time === 'days'){
+function convertTime(time, value) {
+  if (time === 'days') {
     return value;
-  }else if(time === 'weeks'){
-    return value/7;
-
-  }else {
-    return value/30;
+  } if (time === 'weeks') {
+    return value / 7;
+  } else {
+    return value / 30;
     }
   }
 
