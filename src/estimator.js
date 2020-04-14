@@ -1,17 +1,14 @@
 
 function convertTime(time, value){
-switch(time){
-  case 'days':
+  if(time === 'days'){
     return value;
-    break;
-  case 'weeks':
+  }else if(time === 'weeks'){
     return value/7;
-    break;
-  case 'months':
+
+  }else {
     return value/30;
-    break;
+    }
   }
-}
 
 const covid19ImpactEstimator = (data) => {
    return {
